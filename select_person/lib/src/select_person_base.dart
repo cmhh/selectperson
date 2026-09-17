@@ -72,6 +72,7 @@ class PersonSelector {
     }
   }
 
+  /// Return counts by age group
   static List<int> _bin(List<int> ages) => 
     ages.fold(
       [0,0,0,0,0], 
