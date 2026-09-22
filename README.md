@@ -34,4 +34,4 @@ $$
 \mathbf{\pi} = \frac{1}{12}[0,1,3,2,0]' 
 $$
 
-Expanding this out, the vector of ages $[0,5,5,12,12,18,18,25]$ would be subjected to an unequal selection with probabilities $[0, 1/12, 1/12, 3/12, 3/12, 2/12, 2/12, 0]$.
+Expanding this out, the vector of ages $[0,5,5,12,12,18,18,25]$ would be subjected to an unequal selection with probabilities $[0, 1, 1, 3, 3, 2, 2, 0]/12$.
