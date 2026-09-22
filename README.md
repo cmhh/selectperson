@@ -22,7 +22,7 @@ Here, we create a selector where scaling factors are applied to the age groups $
 
 Given a list of single-year ages, we calculate selection probabilities by first converting ages to age groups $[0,4]$, $[5,11]$, $[12,17]$, $[18,24]$, $[25,)$; and then counting the number in each.  For example, $[0,5,5,12,12,18,18,25]$ would be converted to the following age groups: $[1,2,2,3,3,4,4,5]$, and the frequencies would be $[1,2,2,2,1]$.  
 
-Let the counts be represented as $\mathbf{x}'=[x_1, x_2, x_3, x_4, x_5]$, and scaling factors as $mathbf{k}'=[k_1, k_2, k_3, k_4, k_5]$.  Selection probabilities are then calculated for each age group as follows:
+Let the counts be represented as $\mathbf{x}'=[x_1, x_2, x_3, x_4, x_5]$, and scaling factors as $\mathbf{k}'=[k_1, k_2, k_3, k_4, k_5]$.  Selection probabilities are then calculated for each age group as follows:
 
 $$
 \mathbf{\pi} =  \frac{\mathbf{k}}{\mathbf{x}\cdot\mathbf{k}}
