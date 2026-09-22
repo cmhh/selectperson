@@ -35,3 +35,5 @@ $$
 $$
 
 Expanding this out, the vector of ages $[0,5,5,12,12,18,18,25]$ would be subjected to an unequal selection with probabilities $[0, 1, 1, 3, 3, 2, 2, 0]/12$.
+
+Random sampling functions are widely available, but simple cases can be handled easily enough.  In this case, we just want to pick a single element from a collection with unequal probability.  Assume we have $n$ elements, and each has a selection probability $\pi_i$, where $0\geq\pi_i\leq{}1\forall{}i$, and $\sum_{i=1}^n = 1$.  Further let $r$ be a random uniform number in the range $[0,1]$ and define $p_m = \sum_{i=1}^m\pi_i$. We select the unit with index $m'$, where $m'$ is the smallest number for which $r \leq q_m$.  For example, say we had the set of probabilities $\boldsymbol{\pi}'=[0.2, 0.3, 0.5]$, so that $\mathbf{q}'=[0.2,0.5,1]$.  If we select a random number $r = 0.3$ then we would select element 2 since $r>q_1$ and $r<=q_2$.
